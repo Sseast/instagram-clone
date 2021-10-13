@@ -1,14 +1,22 @@
 import Head from "next/head";
+import Feed from "../components/Feed";
+import Header from "../components/Header";
+import Modal from "../components/Modal";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Instagram 2.0 | Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Instagram Clone 2.0</h1>
+      {/* Header */}
+      <Header></Header>
+      {/* Feed */}
+      <Feed></Feed>
+      {/* Modal */}
+      <Modal></Modal>
     </div>
   );
 }
